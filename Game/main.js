@@ -1,6 +1,8 @@
 var cash = 10
 var generators = []
 var lastUpdate = Date.now()
+var cost_increment = 1.2
+var mult_increment = 1.1
 data = {
     cash: cash,
     generators: generators
@@ -35,8 +37,8 @@ function buyGenerator(i) {
     cash -= g.cost
     g.amount += 1
     g.bought += 1
-    g.mult *= 1.1
-    g.cost *= 1.2
+    g.mult *= mult_increment
+    g.cost *= cost_increment
 }
 
 function updateGUI() {
