@@ -1,0 +1,85 @@
+
+* {
+    user-select: none;
+}
+
+.button {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.charHolder {
+    border: 2px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    font-size: 1.3em;
+    float: left;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.fight {
+    display: flex;
+    align-items: center;
+}
+
+.xpStats {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.enemy {
+    font-size: 1.2em;
+    width: 100px;
+    float: left;
+}
+
+#xp {
+    position: absolute;
+    bottom: 25px;
+    left: 1.5%;
+    font-size: 1.8em;
+}
+
+#xpBar {
+    position: absolute;
+    bottom: 10px;
+    left: 1.5%;
+    width: 97%;
+}
+
+.screenButtonsList {
+    display: flex;
+    align-items: center;
+}
+
+.screenButtons {
+    width: 80px;
+    font-size: 1.8em;
+}
+
+.money {
+    font-size: 1.8em;
+    margin: 5px;
+}
+
+.levelButton {
+    width: 100px;
+    height: 50px;
+    float: left;
+    font-size: 1.8em;
+}
+
+.help {
+    display: none;
+    font-size: 1.5em;
+}

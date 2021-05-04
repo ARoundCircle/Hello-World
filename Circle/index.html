@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Circle</title>
+</head>
+<body>
+    <div class="screenButtonsList">
+        <div class="screenButtons button" id="battleScreen" onclick="screenChange('battle')">Battle</div>
+        <div class="screenButtons button" id="itemsScreen" onclick="screenChange('item')">Items</div>  
+        <div class="screenButtons button" id="helpScreen" onclick="screenChange('help')">Help</div>  
+    </div>
+    <div class="money" id="money"></div>
+    <div class="money" id="unallocStats"></div>
+    <div id="playerStats" class="charHolder battle item">
+        <div id="lv"></div>
+        <div id="name">Player</div>
+        <div id="hp"></div>
+        <progress class="health" id="healthP" value="100" max="100"></progress>
+        <div id="atk"></div>
+        <div id="def"></div>
+        <div id="agi"></div>
+        <div id="luk"></div>
+    </div>
+    <div class="battle">
+        <div class="charHolder">
+            <div id="lvE"></div>
+            <div id="nameE">Enemy</div>            
+            <div id="hpE"></div>
+            <progress class="health" id="healthE" value="100" max="100"></progress>
+            <div id="atkE"></div>
+            <div id="defE"></div>
+            <div id="agiE"></div>
+            <div id="lukE"></div>
+        </div>
+        <div class="enemyList">
+            <div id="enemy1" class="enemy button" onclick="fightEnemy(1)">Enemy1</div>
+            <div id="enemy2" class="enemy button" onclick="fightEnemy(2)">Enemy2</div>
+            <div id="enemy3" class="enemy button" onclick="fightEnemy(3)">Enemy3</div>
+            <div id="enemy4" class="enemy button" onclick="fightEnemy(4)">Enemy4</div>
+            <div id="enemy5" class="enemy button" onclick="fightEnemy(5)">Enemy5</div>
+            <div id="enemy6" class="enemy button" onclick="fightEnemy(6)">Enemy6</div>
+            <div id="enemy7" class="enemy button" onclick="fightEnemy(7)">Enemy7</div>
+            <div id="enemy8" class="enemy button" onclick="fightEnemy(8)">Enemy8</div>
+            <div id="enemy9" class="enemy button" onclick="fightEnemy(9)">Enemy9</div>
+            <div id="enemy10" class="enemy button" onclick="fightEnemy(10)">Enemy10</div>
+        </div>
+        <div class="levelStats">
+            <div id="levelhp" class="levelButton button" onclick="levelStat(hp)">HP+</div>
+            <div id="levelatk" class="levelButton button" onclick="levelStat(atk)">ATK+</div>
+            <div id="leveldef" class="levelButton button" onclick="levelStat(def)">DEF+</div>
+            <div id="levelagi" class="levelButton button" onclick="levelStat(agi)">AGI+</div>
+            <div id="levelluk" class="levelButton button" onclick="levelStat(luk)">LUK+</div>
+        </div>
+    </div>
+    <div class="item">
+
+    </div>
+    <div class="help">
+        One stat point gives, <br>
+        10 HP, 1 ATK, 0.5 DEF, 0.25 AGI OR 0.125 LUK <br>
+        HP is the amount of health you have. You die when you have 0 health. <br>
+        ATK is the amount of damage you deal per attack. <br>
+        DEF is the amount of damage reduced from an enemy attack. <br>
+        AGI is your attack speed. <br>
+        LUK is affects crit rate and drop rate of gold and items. <br>
+        <br>
+        items and crit not implemented
+    </div>
+    <div id="xp"></div>
+    <progress id="xpBar" value="0" max="100"></progress>
+</body>
+<script src="js/initialize.js"></script>
+<script src="js/main.js"></script>
+<script src="js/update.js"></script>
+<script src="js/combat.js"></script>
+<script src="js/enemy.js"></script>
+<script src="js/increaseStats.js"></script>
+<script src="js/screenChange.js"></script>
+</html>
