@@ -1,0 +1,49 @@
+
+
+* {
+    user-select: none;
+}
+#number {
+    font-size: 2em;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.itemTitle {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.button {
+    border: 2px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 1.1em;
+}
+
+.buy {
+    width: auto;
+    display: inline-block;
+}
+
+.upgrades {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.topButtons {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 8px;
+}
+

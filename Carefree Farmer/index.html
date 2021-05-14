@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carefree Farmer</title>
+</head>
+<body>
+    <div class="currencyContainer">
+        <div class="currency" id="money"></div>
+    </div>
+    <div class="topButtonContainer">
+        <div id="farm" class="topButton button" onclick="screenChange('farm')">Farm</div>
+        <div id="battle" class="topButton button" onclick="screenChange('battle')">Battle</div>
+        <div id="prestige" class="topButton button" onclick="screenChange('prestige')">Prestige</div>
+        <div id="ascend" class="topButton button" onclick="screenChange('ascend')">Ascend</div>
+        <div id="options" class="topButton button" onclick="screenChange('options')">Options</div>
+        <div id="help" class="topButton button" onclick="screenChange('help')">Help</div>
+    </div>
+    <div class="farm">
+        <div class="farmLandContainer">
+            <div class="farmlandRow">
+                <div id="farmLand0" class="farmLand button" onclick="farmLand(`0`)">
+                    <progress class="plantBar" id="landGrowth0"></progress>
+                </div>
+                <div id="farmLand1" class="farmLand button" onclick="farmLand(`1`)">
+                    <progress class="plantBar" id="landGrowth1"></progress>
+                </div>
+                <div id="farmLand2" class="farmLand button" onclick="farmLand(`2`)">
+                    <progress class="plantBar" id="landGrowth2"></progress>
+                </div>
+            </div>
+            <div class="farmlandRow">
+                <div id="farmLand3" class="farmLand button" onclick="farmLand(`3`)">
+                    <progress class="plantBar" id="landGrowth3"></progress>
+                </div>
+                <div id="farmLand4" class="farmLand button" onclick="farmLand(`4`)">
+                    <progress class="plantBar" id="landGrowth4"></progress>
+                </div>
+                <div id="farmLand5" class="farmLand button" onclick="farmLand(`5`)">
+                    <progress class="plantBar" id="landGrowth5"></progress>
+                </div>
+            </div>
+            <div class="farmlandRow">
+                <div id="farmLand6" class="farmLand button" onclick="farmLand(`6`)">
+                    <progress class="plantBar" id="landGrowth6"></progress>
+                </div>
+                <div id="farmLand7" class="farmLand button" onclick="farmLand(`7`)">
+                    <progress class="plantBar" id="landGrowth7"></progress>
+                </div>
+                <div id="farmLand8" class="farmLand button" onclick="farmLand(`8`)">
+                    <progress class="plantBar" id="landGrowth8"></progress>
+                </div>
+            </div>
+        </div>
+        <div class="farmUpgradeContainer">
+            <div id="farmUpgrade0" class="farmUpgrade button" onclick="farmUpgrade(0)"></div>
+        </div>
+        <div class="farmPlantContainer">
+            <div id="plant0" class="plant button" onclick="selectPlant(0)"></div>
+            <div id="plant1" class="plant button" onclick="selectPlant(1)"></div>
+        </div>
+
+    </div>
+    <div class="battle">
+        to be implemented in 5 hours
+    </div>
+    <div class="prestige">
+        to be implemented in 5 hours
+    </div>
+    <div class="ascend">
+        to be implemented in 5 hours
+    </div>
+    <div class="options">
+        <div class="button" id="reset" onclick="reset()">Reset</div>
+    </div>
+    <div class="help">
+        haha. kinda unfinished game. good luck!
+    </div>
+    
+</body>
+<script src="js/data.js"></script>
+<script src="js/update.js"></script>
+<script src="js/save.js"></script>
+<script src="js/screenChange.js"></script>
+<script src="js/format.js"></script>
+<script src="js/farm.js"></script>
+<script src="js/main.js"></script>
+</html>

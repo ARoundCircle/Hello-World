@@ -1,0 +1,86 @@
+
+* {
+    user-select: none;
+    font-family: "Consolas";
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.topButton {
+    width: auto;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.topButtonContainer {
+    text-align: center;
+}
+
+.farmLand {
+    width: 100;
+    height: 100px;
+    background-size: 100px 100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.plant {
+    width: auto;
+    display: inline-block;
+}
+
+.battle {
+    display: none;
+}
+
+.prestige {
+    display: none;
+}
+
+.ascend {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.help {
+    display: none;
+}
+
+.currencyContainer {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.plantBar {
+    width: 90;
+    position: absolute;
+    bottom: 0;
+    right: 5;
+}
+
+.farmLand {
+    position: relative;
+    align-items: bottom;
+}

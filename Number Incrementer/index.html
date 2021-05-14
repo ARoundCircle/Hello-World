@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Number Incrementer</title>
+</head>
+<body>
+    <div id="number"></div>
+    <div>
+        <div class="topButtons button" id="main" onclick="screenChange('main')">Main</div>
+        <div class="topButtons button" id="upgrades" onclick="screenChange('upgrades')">Upgrades</div>
+        <div class="topButtons button" id="options" onclick="screenChange('options')">Options</div>
+    </div>
+    <div class="main">
+        <div class="item" id="incrementer">
+            <div class="itemTitle">Incrementer</div>
+            <div id="incrementerAmount" class="itemTitle"></div>&nbsp;
+            <div id="incrementerProdution" class="itemTitle"></div>
+            <div id="incrementerBuyMax" class="button buy right" onclick="buyMaxIncrementer()"></div>
+            <div id="incrementerBuy" class="button buy right" onclick="buyIncrementer()"></div>
+            <div id="incrementerCost" class="itemTitle right"></div>
+        </div>
+    </div>
+    <div class="upgrades">
+        <div id="upgrade1" class="upgrade button" onclick="buyUpgrade(1)">Incrementer multiplier x1000 <br>Cost: 1000</div>
+        <div id="upgrade2" class="upgrade button" onclick="buyUpgrade(2)">Incrementer multiplier by 1.5 for each incrementer bought <br>Cost: 1.00e6</div>
+    </div>
+    <div class="options">
+        <div id="reset" class="button" onclick="reset()">Reset</div>
+    </div>
+</body>
+<script src="js/data.js"></script>
+<script src="js/screenChange.js"></script>
+<script src="js/save.js"></script>
+<script src="js/productionLoop.js"></script>
+<script src="js/reset.js"></script>
+<script src="js/buy.js"></script>
+<script src="js/upgrades.js"></script>
+<script src="js/main.js"></script>
+
+</html>
